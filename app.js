@@ -27,7 +27,7 @@ addtaskbtn.addEventListener("click", function(){
         localStorage.setItem("localtask", JSON.stringify(taskObj));
         addtaskinput.value = '';
     }
-     window.alert("New Task Added : "+addtaskinputval);
+     //window.alert("New Task Added : "+addtaskinputval);
     showtask();
 });
 
@@ -89,21 +89,7 @@ function taskCompleted(index){
     
     element.classList.toggle("completed");
 }
-//check
 
-/*function Check(index){
-    let webtask = localStorage.getItem("localtask");
-    let taskObj = JSON.parse(webtask);
-    var name = taskObj[index];
-    var ele = document.getElementById(name);
- /*   const item=index.target;
-if (item.classList[0]==="complete-btn"){
-    const todo=item.parentElement;*/
-  /*  ele.classList.toggle("completed");
-  } */
-
-
-// savetask
 let savetaskbtn = document.getElementById("savetaskbtn");
 savetaskbtn.addEventListener("click", function(){
     let addtaskbtn = document.getElementById("addtaskbtn");
